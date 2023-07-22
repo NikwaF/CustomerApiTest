@@ -9,6 +9,8 @@ COPY CustomerApiTest.DataAccess/*.csproj ./CustomerApiTest.DataAccess/
 COPY CustomerApiTest.Exceptions/*.csproj ./CustomerApiTest.Exceptions/
 COPY CustomerApiTest.Mediators/*.csproj ./CustomerApiTest.Mediators/
 COPY CustomerApiTest.Models/*.csproj ./CustomerApiTest.Models/
+COPY CustomerApiTest.Validators/*.csproj ./CustomerApiTest.Validators/
+COPY CustomerApiTest.Tests/*.csproj ./CustomerApiTest.Tests/
 COPY CustomerApiTest.sln ./CustomerApiTest.sln
 # Add other class libraries as needed
 

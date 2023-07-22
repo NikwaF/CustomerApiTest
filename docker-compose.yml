@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  mssqldb:
+    container_name: db_customer_test
+    build: ./custom-mssql
+    restart: unless-stopped
+    environment: 
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Test123!
+    ports: 
+      - 1433:1433
+  app:
+    depends_on:
+      - mssqldb
+    # image: api-model-generator_app2:latest
+    build: ./
+    container_name: web_customer_test
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    stdin_open: true
+    tty: true
