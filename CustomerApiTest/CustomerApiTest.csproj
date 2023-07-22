@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.6.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.6.0" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.20" />
+    <PackageReference Include="Moq" Version="4.18.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="xunit" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerApiTest.DataAccess\CustomerApiTest.DataAccess.csproj" />
+    <ProjectReference Include="..\CustomerApiTest.Mediators\CustomerApiTest.Mediators.csproj" />
+    <ProjectReference Include="..\CustomerApiTest.Exceptions\CustomerApiTest.Exceptions.csproj" />
+    <ProjectReference Include="..\CustomerApiTest.Validators\CustomerApiTest.Validators.csproj" />
+  </ItemGroup>
+
+</Project>

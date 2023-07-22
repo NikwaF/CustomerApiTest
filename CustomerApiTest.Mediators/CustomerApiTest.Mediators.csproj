@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerApiTest.DataAccess\CustomerApiTest.DataAccess.csproj" />
+    <ProjectReference Include="..\CustomerApiTest.Exceptions\CustomerApiTest.Exceptions.csproj" />
+    <ProjectReference Include="..\CustomerApiTest.Models\CustomerApiTest.Models.csproj" />
+  </ItemGroup>
+
+</Project>
